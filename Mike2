@@ -1,0 +1,15 @@
+echo "# Mike-taylor" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/miketaylor31/Mike-taylor.git
+git push -u origin main
+<main class="main-container">
+    <h2>About Me</h2>
+    <p>Add your content here...</p>
+</main>
+
+<footer class="footer-container">
+    <p>© 2024 Michael Taylor</p>
+</footer>
