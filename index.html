@@ -1,1 +1,202 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Welcome to Michael Taylor's webpage</title> <link rel="stylesheet" href="styles.css"> </head> <body> <header class="header-container"> <h1>Welcome to Michael Taylor's Webpage</h1> </header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Taylor | Professional Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    <header class="header-container">
+        <h1>Michael Taylor</h1>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#contact">Contact</a></li>
+                </ul>
+        </nav>
+    </header>
+    
+    <main class="main-container">
+        <section id="about" class="content-section">
+            <h2>About Me</h2>
+            <p>Welcome to my professional webpage. I am a highly motivated individual with a background in [Your Field/Industry, e.g., Data Analysis, Software Development, Marketing]. I am passionate about [Key Passion, e.g., leveraging technology to solve complex problems, creating user-centered design, continuous learning].</p>
+            <p>I believe in [Your Core Value, e.g., the power of collaboration, delivering high-quality results, lifelong skill development]. I am currently looking for opportunities in [Type of Role/Industry] where I can contribute my skills in [Mention 2-3 Key Skills, e.g., Python, Project Management, Cloud Computing].</p>
+            <hr>
+        </section>
+
+        <section id="interests" class="content-section">
+            <h2>Professional & Personal Interests</h2>
+            <div class="interests-grid">
+                <div class="interest-item">
+                    <h3>Professional Interests</h3>
+                    <ul>
+                        <li>**Technology & Innovation:** Exploring the latest trends in AI, machine learning, and blockchain.</li>
+                        <li>**[Your Field] Deep Dive:** Focusing on advanced techniques in [Specific Area, e.g., statistical modeling, front-end optimization].</li>
+                        <li>**Mentorship & Collaboration:** Enjoying team-based projects and helping others develop new skills.</li>
+                    </ul>
+                </div>
+                <div class="interest-item">
+                    <h3>Personal Hobbies</h3>
+                    <ul>
+                        <li>**Outdoor Activities:** Hiking, cycling, and exploring nature trails.</li>
+                        <li>**Creative Pursuits:** Photography (specifically [Type of Photography]), or playing a musical instrument.</li>
+                        <li>**Reading:** Non-fiction books on history and futurism.</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </section>
+
+        <section id="contact" class="content-section">
+            <h2>Contact Information</h2>
+            <p>I am always open to discussing new opportunities, collaborations, or connecting with fellow professionals. Feel free to reach out!</p>
+            
+            <address class="contact-details">
+                <p><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">Michael Taylor on LinkedIn</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">github.com/yourusername</a></p>
+                </address>
+        </section>
+
+    </main>
+    
+    <footer class="footer-container">
+        <p>© 2024 Michael Taylor | Built with HTML5 and CSS3</p>
+    </footer>
+</body>
+</html>
+:root {
+    --primary-color: #0056b3; /* A professional blue for accents */
+    --text-color: #333;
+    --background-color: #f8f8f8;
+    --light-gray: #e9ecef;
+    --font-family: 'Arial', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #fff; /* White background for main content */
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove default list styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none; /* Remove underline by default */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* --- 2. LAYOUT CONTAINERS --- */
+
+.header-container,
+.footer-container {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.main-container {
+    max-width: 1000px;
+    margin: 20px auto; /* Centers the content block */
+    padding: 0 20px;
+}
+
+/* --- 3. HEADER & NAVIGATION --- */
+
+.header-container h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2em;
+}
+
+.navigation ul {
+    display: flex; /* Arrange links horizontally */
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+}
+
+.navigation a {
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.navigation a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+}
+
+/* --- 4. MAIN CONTENT SECTIONS --- */
+
+.content-section {
+    padding: 40px 0;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.content-section:last-child {
+    border-bottom: none; /* Remove border from the last section */
+}
+
+.content-section h2 {
+    color: var(--primary-color);
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    border-left: 5px solid var(--primary-color);
+    padding-left: 10px;
+}
+
+/* --- 5. INTERESTS GRID (for a neat layout) --- */
+
+.interests-grid {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.interest-item {
+    flex: 1; /* Distribute space evenly */
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.interest-item h3 {
+    color: var(--text-color);
+    margin-top: 0;
+    border-bottom: 1px dashed var(--light-gray);
+    padding-bottom: 5px;
+}
+
+.interest-item ul li {
+    margin-bottom: 10px;
+}
+
+/* --- 6. CONTACT DETAILS --- */
+
+.contact-details p {
+    margin: 5px 0;
+}
+
+/* --- 7. FOOTER --- */
+
+.footer-container p {
+    margin: 0;
+    font-size: 0.9em;
+    padding: 10px 0;
+}
